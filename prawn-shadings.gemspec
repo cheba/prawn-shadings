@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'prawn-shadings'
-  s.version     = '0.1.0'
+  s.version     = '0.1.1'
   s.date        = Date.today.to_s
   s.summary     = "Advanced PDF shadings for Prawn"
   s.description = "Prawn itself provides only linear and radial gradients. This is the more advanced shadings that PDF spec defines."
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
 
   s.test_files = Dir["spec/*_spec.rb"]
 
-  s.add_runtime_dependency 'prawn', '~> 1.1', '< 1.1'
+  s.add_runtime_dependency 'prawn', '>= 1.0.0.rc1', '< 1.1'
 
   s.add_development_dependency('rdoc')
   s.add_development_dependency('rspec', '~> 2.12')
