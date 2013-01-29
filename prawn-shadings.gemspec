@@ -13,11 +13,12 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 1.9.3'
   s.required_rubygems_version = '>= 1.3.6'
 
-  s.files       = Dir["{lib,spec}/**/*"] + %w[LICENSE BSDL .rspec Gemfile Rakefile]
+  s.files       = Dir["{lib,spec}/**/*"] + %w[README.md LICENSE BSDL .rspec Gemfile Rakefile]
   s.require_path = "lib"
 
   s.extra_rdoc_files = %w{LICENSE BSDL}
-  s.rdoc_options << '--title' << 'Prawn Shadings Documentation'
+  s.rdoc_options << '--title' << 'Prawn Shadings Documentation' <<
+                    '--main'  << 'README.md' << '-q'
 
   s.test_files = Dir["spec/*_spec.rb"]
 
