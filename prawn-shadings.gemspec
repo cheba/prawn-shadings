@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
 
   s.test_files = Dir["spec/*_spec.rb"]
 
-  s.add_runtime_dependency 'prawn', '>= 1.0.0.rc1', '< 1.1'
+  s.add_runtime_dependency 'prawn', '>= 0.15.0', '< 1.1'
 
   s.add_development_dependency('rdoc')
   s.add_development_dependency('rspec', '~> 2.12')
